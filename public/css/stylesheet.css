@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    border: 1px solid white;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+hr{
+    height: 1px;
+    background: rgb(31, 29, 29);
+}
+
+/*------------------ CSS for FORM and TABLE --------------------*/
+
+input[type="search"], input[type="text"]{
+    border: 1px solid black;
+}
+
+/* Placeholder Positioning */
+input[type="search"]{
+    padding-left: 10%;
+}
+
+.search-icon-position{
+    float: left;
+    margin-left: 6px;
+    margin-top: -26px;
+    position: relative;
+    color: grey;
+}
+
+.input-field-padding{
+    border: 1px solid white;
+    padding: 2%;
+    margin: 2% auto;
+}
+
+.input-group{
+    padding: 2%;
+}
+
+.form-outline{
+    width: 50%;
+}
+
+.table-size{
+   border: 1px solid white;
+}
+
+.top-margin{  
+    margin-top: 0%;
+    margin-bottom: 4%;
+}
+  
+
+/*------------------------- CSS FOR BUTTON -----------------------*/
+
+.btn-light{
+    background-color: #003399;
+    color: white;
+}
+
+.btn-warning{
+    color: white;
+}
+
+.btn-danger{
+    width: 42px;
+}
+
+.btn-light:hover{
+    background-color: #1e489c;
+}
+
+.btn-danger:hover, .btn-info:hover{
+    color: black;
+}
+
+/* styling button danger for width: 493px */
+@media(max-width: 503px){
+    .btn-danger {
+        margin-bottom: 6%;
+    }
+}
