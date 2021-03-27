@@ -14,7 +14,7 @@ class BookManagementController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -46,7 +46,7 @@ class BookManagementController extends Controller
      */
     public function show(BookManagement $bookManagement)
     {
-            return view('BookManagement_show');
+           return view('BookManagement_show')-> with('bookArray', BookManagement::all());
     }
 
     /**
@@ -78,8 +78,9 @@ class BookManagementController extends Controller
      * @param  \App\BookManagement  $bookManagement
      * @return \Illuminate\Http\Response
      */
-    public function destroy(BookManagement $bookManagement)
+    public function destroy(BookManagement $bookManagement, $id)
     {
-        //
+        BookManagement::destroy(array('id',$id));
+        return redirect('BookManagement_show');
     }
 }

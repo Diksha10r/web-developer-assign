@@ -11,8 +11,11 @@
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('BookManagement_show','BookManagementController@show' );
+Route::get('BookManagement_delete/{id}','BookManagementController@destroy' );

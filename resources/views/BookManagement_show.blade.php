@@ -69,61 +69,26 @@
 
                     <thead class="thead-dark">
                         <tr>
-                            <th onclick="sortTable(0);" scope="col">Title</th>
+                            <th onclick="sortTable(0);" scope="col">Book Title</th>
                             <th onclick="sortTable(1);" scope="col">Author</th>
                             <th scope="col">Actions</th>
                         </tr>
                     </thead>
         
                     <tbody>
+                        @foreach($bookArray as $books)
                         <tr>
-                            <td>The Coalition Years</td>
-                            <td>Pranab Mukherjee</td>
+                            <td>{{$books->bookname}}</td>
+                            <td>{{$books->bookauthor}}</td>
                             <td>
-                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete List Item"><i class="fa fa-trash"></i></button>
+                                <a href="BookManagement_delete/{{$books->id}}"class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete List Item" ><i class="fa fa-trash"></i></a>
+                                
                                 <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Edit List Item"><i class="fa fa-edit"></i></button>
                             </td>
                         </tr>
-                        <tr>
-                            <td>Two Lives</td>
-                            <td>Vikram Seth</td>
-                            <td>
-                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete List Item"><i class="fa fa-trash"></i></button>
-                                <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Edit List Item"><i class="fa fa-edit"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>India 2020: A Vision for the New Millennium</td>
-                            <td>APJ Abdul Kalam</td>
-                            <td>
-                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete List Item"><i class="fa fa-trash"></i></button>
-                                <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Edit List Item"><i class="fa fa-edit"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Obama: The Call of History</td>
-                            <td>Peter Baker</td>
-                            <td>
-                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete List Item"><i class="fa fa-trash"></i></button>
-                                <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Edit List Item"><i class="fa fa-edit"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Sridevi: Girl Woman Superstar</td>
-                            <td>Satyarth Nayak</td>
-                            <td>
-                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete List Item"><i class="fa fa-trash"></i></button>
-                                <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Edit List Item"><i class="fa fa-edit"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>My Journey</td>
-                            <td>Dr. APJ Abdul Kalam</td>
-                            <td>
-                                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete List Item"><i class="fa fa-trash"></i></button>
-                                <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Edit List Item"><i class="fa fa-edit"></i></button>
-                            </td>
-                        </tr>
+                        @endforeach
+                        
+                        
                     </tbody>
                 </table>
       
