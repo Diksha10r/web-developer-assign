@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class BookManagement extends Model
 {
-    //
+    public $timestamps = false;
+
 }

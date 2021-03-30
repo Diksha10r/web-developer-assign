@@ -12,9 +12,12 @@ class BookManagementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    
     public function index()
-    {
+    {   
         
+        return view('BookManagement_showbook')-> with('bookArray', BookManagement::all());
     }
 
     /**
@@ -24,7 +27,7 @@ class BookManagementController extends Controller
      */
     public function create()
     {
-        //
+        return view('BookManagement_addbook');
     }
 
     /**
@@ -34,8 +37,23 @@ class BookManagementController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {   
+        
+         $this->validate($request,[
+            'bookname'=> 'required',
+            'bookauthor'=> 'required'
+            
+        ]);
+
+        $storebook = new BookManagement;
+        $storebook->bookname=$request->input('bookname');
+        $storebook->bookauthor=$request->input('bookauthor');
+        
+        $storebook->save();
+        $request->session()->flash('msg','Data added successfully!');
+        return redirect('/');
+   
+
     }
 
     /**
@@ -46,7 +64,7 @@ class BookManagementController extends Controller
      */
     public function show(BookManagement $bookManagement)
     {
-           return view('BookManagement_show')-> with('bookArray', BookManagement::all());
+           //return view('BookManagement_show')-> with('bookArray', BookManagement::all());
     }
 
     /**
@@ -81,6 +99,6 @@ class BookManagementController extends Controller
     public function destroy(BookManagement $bookManagement, $id)
     {
         BookManagement::destroy(array('id',$id));
-        return redirect('BookManagement_show');
+        return redirect('/');
     }
 }

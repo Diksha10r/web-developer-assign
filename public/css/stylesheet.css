@@ -5,13 +5,18 @@
 
 .main-container{
     border: 1px solid white;
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 2%;
 }
 
 hr{
     height: 1px;
     background: rgb(31, 29, 29);
+}
+
+.textstyle{
+    color : rgb(9, 104, 9);
+
 }
 
 /*------------------ CSS for FORM and TABLE --------------------*/
@@ -49,7 +54,12 @@ input[type="search"]{
 
 .table-size{
    border: 1px solid white;
+   height:300px;
+   overflow-y:auto;
+   
+
 }
+
 
 .top-margin{  
     margin-top: 0%;

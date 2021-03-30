@@ -29,38 +29,45 @@
        <!-- <div class="flex-center position-ref full-height">
             
         </div>-->
+        
         <div class="container main-container">
 
+            
             <div class="container input-field-padding">
-                <form action="" method="GET" id="form">
+                <form action="BookManagement_submit" method="GET" id="form">
                     <div class="d-grid gap-3 form-row">
                         <div class="p-2 col-sm-5">
                             <label class="sr-only" for="title">Title</label>
-                            <input type="text" class="form-control" id="title" placeholder="Enter Book Title" name="title" required autofocus>
+                            <input type="text" class="form-control" id="title" placeholder="Enter Book Title" name="bookname" required autofocus>
                         </div>
                         <div class="p-2 col-sm-5">
                             <label class="sr-only" for="author">Author</label>
-                            <input type="text" class="form-control" id="author" placeholder="Enter Author Name" name="author" required>
+                            <input type="text" class="form-control" id="author" placeholder="Enter Author Name" name="bookauthor" pattern="^[_A-z0-9]*((-|\s)*[_A-z0-9])*$" title="alphanumeric characters only" required>
                         </div>
                         <div class="p-2 col-sm-2">
-                            <button onclick="return test();" type="submit" class="form-control btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Add to List">Add</button>
+                            <button class="form-control btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Add to List">ADD</button>
+                            
                         </div>
                     </div>
                 </form>
             </div>
 
+            <h6 class="textstyle">{{session('msg')}}</h6>
+
+       
             <hr />
 
-            <div class="container table-size">
-
-                    <div class="input-group d-flex justify-content-center top-margin">
+            <div class="input-group d-flex justify-content-center top-margin">
                         <div class="form-outline">
                             <input onkeyup="search()" id="search-input" type="search" class="form-control" placeholder="Search Title or Author" />
                             <span class="fa fa-search search-icon-position"></span>
                         </div>
-                    </div>
+            </div>
 
-                <table id="myTable" class="table table-hover">
+            
+            <div class="container table-size">
+
+                    <table  id="myTable" class="table table-hover" >
                     <colgroup>
                         <col span="1" style="width: 40%;">
                         <col span="1" style="width: 35%;">
@@ -76,7 +83,8 @@
                     </thead>
         
                     <tbody>
-                        @foreach($bookArray as $books)
+                    
+                        @foreach( $bookArray as $books)
                         <tr>
                             <td>{{$books->bookname}}</td>
                             <td>{{$books->bookauthor}}</td>

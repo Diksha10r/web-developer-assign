@@ -1,5 +1,5 @@
 function test(){
-  var author = document.getElementById('author');
+  var author = document.getElementById('bookauthor');
   var authorFilter = /^[a-zA-Z]*$/i;
   var test_filter = authorFilter.test(author.value);
   if (test_filter == false)
