@@ -32,7 +32,7 @@
         
         <div class="container main-container">
 
-            
+            <center><h6 class="msgtextstyle">{{session('msg')}}</h6></center> 
             <div class="container input-field-padding">
                 <form action="BookManagement_submit" method="GET" id="form">
                     <div class="d-grid gap-3 form-row">
@@ -52,9 +52,6 @@
                 </form>
             </div>
 
-            <h6 class="textstyle">{{session('msg')}}</h6>
-
-       
             <hr />
 
             <div class="input-group d-flex justify-content-center top-margin">
@@ -64,10 +61,8 @@
                         </div>
             </div>
 
-            
             <div class="container table-size">
-
-                    <table  id="myTable" class="table table-hover" >
+                <table  id="myTable" class="table table-hover" >
                     <colgroup>
                         <col span="1" style="width: 40%;">
                         <col span="1" style="width: 35%;">
@@ -81,26 +76,21 @@
                             <th scope="col">Actions</th>
                         </tr>
                     </thead>
-        
                     <tbody>
-                    
                         @foreach( $bookArray as $books)
                         <tr>
                             <td>{{$books->bookname}}</td>
                             <td>{{$books->bookauthor}}</td>
                             <td>
-                                <a href="BookManagement_delete/{{$books->id}}"class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete List Item" ><i class="fa fa-trash"></i></a>
-                                
-                                <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Edit List Item"><i class="fa fa-edit"></i></button>
+                                <a href="BookManagement_delete/{{$books->id}}" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete List Item" ><i class="fa fa-trash"></i></a>
+                                <a href="BookManagement_editbook/{{$books->id}}" class="btn btn-warning"  title="Edit List Item"><i class="fa fa-edit"></i></a>    
                             </td>
                         </tr>
                         @endforeach
-                        
-                        
                     </tbody>
                 </table>
-      
             </div>
+            
         </div>
     </body>
 </html>

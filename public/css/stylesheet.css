@@ -5,8 +5,16 @@
 
 .main-container{
     border: 1px solid white;
-    margin-top: 2%;
     padding: 2%;
+}
+
+.editPagecontainer{
+
+    box-align:center;
+    margin-top: 10%;
+    border: 1px solid black;
+    width:50%;
+
 }
 
 hr{
@@ -14,10 +22,12 @@ hr{
     background: rgb(31, 29, 29);
 }
 
-.textstyle{
+.msgtextstyle{
     color : rgb(9, 104, 9);
+    margin-top: 2%;
 
 }
+
 
 /*------------------ CSS for FORM and TABLE --------------------*/
 

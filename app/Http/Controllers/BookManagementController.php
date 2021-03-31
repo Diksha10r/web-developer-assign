@@ -17,7 +17,7 @@ class BookManagementController extends Controller
     public function index()
     {   
         
-        return view('BookManagement_showbook')-> with('bookArray', BookManagement::all());
+        return view('BookManagement_showAndAddbook')-> with('bookArray', BookManagement::all());
     }
 
     /**
@@ -27,7 +27,7 @@ class BookManagementController extends Controller
      */
     public function create()
     {
-        return view('BookManagement_addbook');
+        //
     }
 
     /**
@@ -64,7 +64,7 @@ class BookManagementController extends Controller
      */
     public function show(BookManagement $bookManagement)
     {
-           //return view('BookManagement_show')-> with('bookArray', BookManagement::all());
+           //
     }
 
     /**
@@ -73,9 +73,9 @@ class BookManagementController extends Controller
      * @param  \App\BookManagement  $bookManagement
      * @return \Illuminate\Http\Response
      */
-    public function edit(BookManagement $bookManagement)
+    public function edit(BookManagement $bookManagement, $id)
     {
-        //
+        return view('BookManagement_editbook')-> with('bookArray', BookManagement::find($id));
     }
 
     /**
@@ -87,7 +87,20 @@ class BookManagementController extends Controller
      */
     public function update(Request $request, BookManagement $bookManagement)
     {
-        //
+        $this->validate($request,[
+            'bookname'=> 'required',
+            'bookauthor'=> 'required'
+            
+        ]);
+        $storebook = BookManagement::find($request->id);
+        $storebook->bookname=$request->input('bookname');
+        $storebook->bookauthor=$request->input('bookauthor');
+        
+        $storebook->save();
+        $request->session()->flash('msg','Data updated successfully!');
+        return redirect('/');
+
+        
     }
 
     /**
