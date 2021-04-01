@@ -60,7 +60,7 @@
                             <span class="fa fa-search search-icon-position"></span>
                         </div>
             </div>
-
+            
             <div class="container table-size">
                 <table  id="myTable" class="table table-hover" >
                     <colgroup>
@@ -92,5 +92,21 @@
             </div>
             
         </div>
+        <form method='post' action='/export'>
+                {{ csrf_field() }}
+
+                <div class="dropdown csvdropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        CSV EXPORT
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <input type="submit" name="exportallcsv" class="dropdown-item btn-success csvbutton"  value="ENTIRE DATA">
+                        <input type="submit" name="exportbooknamescsv" class="dropdown-item btn-success csvbutton"  value="ONLY BOOK NAMES">
+                        <input type="submit" name="exportbookauthorscsv" class="dropdown-item btn-success csvbutton"  value="ONLY BOOK AUTHOR">
+                    </div>
+                </div>
+               <!-- <input type="submit" name="exportexcel" value='Excel Export'>-->    
+        </form>
+            
     </body>
 </html>

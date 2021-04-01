@@ -5,6 +5,12 @@ namespace App\Http\Controllers;
 use App\BookManagement;
 use Illuminate\Http\Request;
 
+use App\Exports\BookExport;
+use App\Exports\BooknameExport;
+use App\Exports\BookauthorExport;
+use Maatwebsite\Excel\Facades\Excel;
+
+
 class BookManagementController extends Controller
 {
     /**
@@ -114,4 +120,30 @@ class BookManagementController extends Controller
         BookManagement::destroy(array('id',$id));
         return redirect('/');
     }
+
+
+    public function export(Request $request){
+
+        if ($request->input('exportexcel') != null ){
+           return Excel::download(new BookExport, 'allbookDetails.xlsx');
+        }
+   
+        if ($request->input('exportallcsv') != null ){
+           return Excel::download(new BookExport, 'allbookDetails.csv');
+        }
+        
+        if ($request->input('exportbooknamescsv') != null ){
+
+            return Excel::download(new BooknameExport, 'booknamesList.csv');
+        }
+
+        if ($request->input('exportbookauthorscsv') != null ){
+
+            return Excel::download(new BookauthorExport, 'bookauthorsList.csv');
+        }
+
+        
+        return redirect()->action('BookManagementController@index');
+      }
+
 }

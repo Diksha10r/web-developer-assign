@@ -29,6 +29,7 @@ hr{
 }
 
 
+
 /*------------------ CSS for FORM and TABLE --------------------*/
 
 input[type="search"], input[type="text"]{
@@ -64,7 +65,7 @@ input[type="search"]{
 
 .table-size{
    border: 1px solid white;
-   height:300px;
+   height:200px;
    overflow-y:auto;
    
 
@@ -105,4 +106,25 @@ input[type="search"]{
     .btn-danger {
         margin-bottom: 6%;
     }
+}
+
+.csvdropdown{
+    margin-left: 12%;
+}
+
+.csvbutton{
+    
+    background-color: #fff;
+    border-color: #1c7430;
+    user-select: none;
+    border: 1px solid transparent;
+    
+    
+}
+
+.xmlbutton{
+    background-color: #fff;
+    border-color: #1c7430;
+    user-select: none;
+    border: 1px solid transparent;
 }
