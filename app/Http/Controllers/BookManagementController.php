@@ -11,6 +11,7 @@ use App\Exports\BookauthorExport;
 use Maatwebsite\Excel\Facades\Excel;
 
 
+
 class BookManagementController extends Controller
 {
     /**
@@ -124,9 +125,6 @@ class BookManagementController extends Controller
 
     public function export(Request $request){
 
-        if ($request->input('exportexcel') != null ){
-           return Excel::download(new BookExport, 'allbookDetails.xlsx');
-        }
    
         if ($request->input('exportallcsv') != null ){
            return Excel::download(new BookExport, 'allbookDetails.csv');
@@ -141,7 +139,18 @@ class BookManagementController extends Controller
 
             return Excel::download(new BookauthorExport, 'bookauthorsList.csv');
         }
-
+        
+        if ($request->input('exportallxml') != null ){
+            return Excel::download(new BookExport, 'allbookDetails.xlsx');
+         }
+        
+         if ($request->input('exportbooknamesxml') != null ){
+            return Excel::download(new BooknameExport, 'booknamesList.xlsx');
+         }
+        
+         if ($request->input('exportbookauthorsxml') != null ){
+            return Excel::download(new BookauthorExport, 'bookauthorsList.xlsx');
+         }
         
         return redirect()->action('BookManagementController@index');
       }

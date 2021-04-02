@@ -71,7 +71,6 @@ input[type="search"]{
 
 }
 
-
 .top-margin{  
     margin-top: 0%;
     margin-bottom: 4%;
@@ -109,7 +108,7 @@ input[type="search"]{
 }
 
 .csvdropdown{
-    margin-left: 12%;
+    margin-left: 3%;
 }
 
 .csvbutton{
@@ -122,9 +121,18 @@ input[type="search"]{
     
 }
 
+
+/*.xmldropdown{
+    margin-left: 78%;
+}*/
+
 .xmlbutton{
+    
     background-color: #fff;
-    border-color: #1c7430;
+    border-color: #949493;
     user-select: none;
     border: 1px solid transparent;
+    
+    
 }
+
