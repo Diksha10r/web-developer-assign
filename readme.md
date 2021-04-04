@@ -2,10 +2,10 @@
 
 <B>BOOK MANAGEMENT</B>
 
-<p>This project allows a user to add, update, delete and fetch book details.
-It also allows user to search a book by its title and author name.
-Also, a user can sort the title and author name in ascending and descending order alphabetically.
-User can export the data either as csv or xlsx format.</p>
+-This project allows a user to add, update, delete and fetch book details.
+-It also allows user to search a book by its title and author name.
+-Also, a user can sort the title and author name in ascending and descending order alphabetically.
+-User can export the data either as csv or xlsx format.</p>
 
 <B> HOW TO ACCESS</B>
 
