@@ -1,5 +1,34 @@
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
+<B>BOOK MANAGEMENT</B>
+
+This project allows a user to add, update, delete and fetch book details.
+It also allows user to search a book by its title and author name.
+Also, a user can sort the title and author name in ascending and descending order alphabetically.
+User can export the data either as csv or xlsx format.
+
+<B> HOW TO ACCESS</B>
+
+First you need to have laravel setup with composer and php. (here the latest version is used for all of them)
+After installation and running the wampserver, you can now clone the repo.
+Next type 127.0.0.1:8000 in the url section to access the project.
+
+<B>HOW TO CARRY OUT CRUD OPERATIONS FOR THIS PROJECT</B>
+
+1) After hitting the url - 127.0.0.1:8000, you will find a form, a search bar, a table filled with records and buttons to export this data in a desired format.
+2) Through this form you can add new book record into the database. Now the newly created data will be shown in the table which is below the form.
+3) Table in this page can be used to edit and delete records by clicking on the action buttons.
+4) Also, you can sort the title and author by clicking on the table headers of this table.
+5) Through search bar you can search book records either by entering a book title or author name.
+6) With 'csv export' and 'excel export' button you can extract the data in 3 ways. 
+    a) details of all the books
+    b) only book title 
+    c) only book author
+
+
+For CRUD operations and validations, test cases are also written that gives good test coverage.
+
+
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
