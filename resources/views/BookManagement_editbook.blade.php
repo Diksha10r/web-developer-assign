@@ -32,7 +32,7 @@
              
             <div class="container main-container editPagecontainer shadow-lg p-3 mb-5 bg-white rounded">
                 <center><h6 class="msgtextstyle">EDIT BOOK DETAILS</h6></center>
-                <form method="get" action="{{route('BookManagement.update',[$bookArray->id])}}">
+                <form method="post" action="{{route('BookManagement.update',[$bookArray->id])}}">
                     @csrf
                     <div class="form-group">
                         <label for="titleInput">Book Title</label>

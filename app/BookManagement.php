@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\DB;
 class BookManagement extends Model
 {
     public $timestamps = false;
-
+    
     public static function getdetails(){
 
         $records = DB::table('book_management')->select('id','bookname','bookauthor')->get()->toArray();

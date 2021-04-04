@@ -34,7 +34,8 @@
 
             <center><h6 class="msgtextstyle">{{session('msg')}}</h6></center> 
             <div class="container input-field-padding">
-                <form action="BookManagement_submit" method="GET" id="form">
+                <form action="BookManagement_submit" method="post" id="form">
+                    {{ csrf_field() }}
                     <div class="d-grid gap-3 form-row">
                         <div class="p-2 col-sm-5">
                             <label class="sr-only" for="title">Title</label>

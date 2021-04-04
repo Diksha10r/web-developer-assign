@@ -15,9 +15,10 @@
 
 Route::get('/','BookManagementController@index' );
 Route::get('BookManagement_delete/{id}','BookManagementController@destroy' );
-Route::get('BookManagement_submit','BookManagementController@store' );
+Route::post('BookManagement_delete/{id}','BookManagementController@destroy' );
+Route::post('BookManagement_submit','BookManagementController@store' );
 Route::get('BookManagement_editbook/{id}','BookManagementController@edit' );
-Route::get('BookManagement_update/{id}','BookManagementController@update' )-> name('BookManagement.update');
+Route::post('BookManagement_update/{id}','BookManagementController@update' )-> name('BookManagement.update');
 Route::post('/export', 'BookManagementController@export');
 /*Route::get('/bookxml', function(){
                 $books=App\BookManagement::all();
