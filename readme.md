@@ -2,16 +2,16 @@
 
 <B>BOOK MANAGEMENT</B>
 
-This project allows a user to add, update, delete and fetch book details.
+<p>This project allows a user to add, update, delete and fetch book details.
 It also allows user to search a book by its title and author name.
 Also, a user can sort the title and author name in ascending and descending order alphabetically.
-User can export the data either as csv or xlsx format.
+User can export the data either as csv or xlsx format.</p>
 
 <B> HOW TO ACCESS</B>
 
-First you need to have laravel setup with composer and php. (here the latest version is used for all of them)
+<p>First you need to have laravel setup with composer and php. (here the latest version is used for all of them)
 After installation and running the wampserver, you can now clone the repo.
-Next type 127.0.0.1:8000 in the url section to access the project.
+Next type 127.0.0.1:8000 in the url section to access the project.</p>
 
 <B>HOW TO CARRY OUT CRUD OPERATIONS FOR THIS PROJECT</B>
 
