@@ -10,9 +10,9 @@
 
 <B> HOW TO ACCESS</B>
 
-<p>First you need to have laravel setup with composer and php. (here the latest version is used for all of them)
-After installation and running the wampserver, you can now clone the repo.
-Next type 127.0.0.1:8000 in the url section to access the project.</p>
+> First you need to have laravel setup with composer and php. (here the latest version is used for all of them)
+> After installation and running the wampserver, you can now clone the repo.
+> Next type 127.0.0.1:8000 in the url section to access the project.</p>
 
 <B>HOW TO CARRY OUT CRUD OPERATIONS FOR THIS PROJECT</B>
 
