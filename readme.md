@@ -27,9 +27,10 @@
     c) only book author
 
 
-> For CRUD operations and validations, test cases are also written that gives good test coverage.
+> *For CRUD operations and validations, test cases are also written that gives good test coverage.
 
 
+</br></br>
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
