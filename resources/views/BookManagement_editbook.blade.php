@@ -26,9 +26,6 @@
         
     </head>
     <body>
-       <!-- <div class="flex-center position-ref full-height">
-            
-        </div>-->
              
             <div class="container main-container editPagecontainer shadow-lg p-3 mb-5 bg-white rounded">
                 <center><h6 class="msgtextstyle">EDIT BOOK DETAILS</h6></center>

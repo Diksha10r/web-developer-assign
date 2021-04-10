@@ -1,14 +1,3 @@
-function test(){
-  var author = document.getElementById('bookauthor');
-  var authorFilter = /^[a-zA-Z]*$/i;
-  var test_filter = authorFilter.test(author.value);
-  if (test_filter == false)
-  {
-      alert('Please Enter valid Author Name');
-  }
-}
-
-
 function search() {
     var inputForSearch, filter, table, tableRow, tableData, textValue;
 

@@ -5,7 +5,15 @@
 
 .main-container{
     border: 1px solid white;
-    padding: 2%;
+    padding: 2% 8% 4% 8%;
+}
+
+.messagediv{
+    border: 1px solid white;
+    height:3%;
+    width:50%;
+    margin-top: 1%;
+    
 }
 
 .editPagecontainer{
@@ -22,10 +30,8 @@ hr{
     background: rgb(31, 29, 29);
 }
 
-.msgtextstyle{
+.messagetextstyle{
     color : rgb(9, 104, 9);
-    margin-top: 2%;
-
 }
 
 
@@ -107,11 +113,8 @@ input[type="search"]{
     }
 }
 
-.csvdropdown{
-    margin-left: 3%;
-}
 
-.csvbutton{
+.exportbutton{
     
     background-color: #fff;
     border-color: #1c7430;
@@ -119,14 +122,10 @@ input[type="search"]{
     border: 1px solid transparent;
     
     
+    
 }
 
-
-/*.xmldropdown{
-    margin-left: 78%;
-}*/
-
-.xmlbutton{
+.xlsxbutton{
     
     background-color: #fff;
     border-color: #949493;

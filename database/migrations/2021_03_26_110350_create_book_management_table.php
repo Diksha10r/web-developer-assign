@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateBookManagementTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+    
     public function up()
     {
         Schema::create('book_management', function (Blueprint $table) {
@@ -20,11 +16,7 @@ class CreateBookManagementTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+    
     public function down()
     {
         Schema::dropIfExists('book_management');

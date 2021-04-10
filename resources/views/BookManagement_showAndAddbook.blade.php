@@ -26,13 +26,10 @@
         
     </head>
     <body>
-       <!-- <div class="flex-center position-ref full-height">
-            
-        </div>-->
-        
+    
         <div class="container main-container">
 
-            <center><h6 class="msgtextstyle">{{session('msg')}}</h6></center> 
+            <center><div class="messagediv"><h6 class="messagetextstyle">{{session('message')}}</h6></div></center>
             <div class="container input-field-padding">
                 <form action="BookManagement_submit" method="post" id="form">
                     {{ csrf_field() }}
@@ -93,33 +90,47 @@
             </div>
             
         </div>
+        
         <form method='post' action='/export'>
                 {{ csrf_field() }}
             <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="dropdown csvdropdown col-sm-7">
-                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="col-sm-3"></div>
+                
+                <div class="dropdown  col-sm-2">
+                    <button class="btn btn-secondary dropdown-toggle form-control" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         CSV EXPORT
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <input type="submit" name="exportallcsv" class="dropdown-item btn-success csvbutton"  value="ENTIRE DATA">
-                        <input type="submit" name="exportbooknamescsv" class="dropdown-item btn-success csvbutton"  value="ONLY BOOK NAMES">
-                        <input type="submit" name="exportbookauthorscsv" class="dropdown-item btn-success csvbutton"  value="ONLY BOOK AUTHOR">
+                        <input type="submit" name="exportallcsv" class="dropdown-item btn-secondary exportbutton"  value="ENTIRE DATA">
+                        <input type="submit" name="exportbooknamescsv" class="dropdown-item btn-secondary exportbutton"  value="ONLY BOOK NAMES">
+                        <input type="submit" name="exportbookauthorscsv" class="dropdown-item btn-secondary exportbutton"  value="ONLY BOOK AUTHOR">
                     </div>
                 </div>
-                <div class="col-sm-1"></div>
-                <div class="dropdown xmldropdown col-sm-1">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                
+                <div class="dropdown  col-sm-2">
+                    <button class="btn btn-secondary dropdown-toggle form-control" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         EXCEL EXPORT
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
-                        <input type="submit" name="exportallxml" class="dropdown-item btn-secondary xmlbutton"  value="ENTIRE DATA">
-                        <input type="submit" name="exportbooknamesxml" class="dropdown-item btn-secondary xmlbutton"  value="ONLY BOOK NAMES">
-                        <input type="submit" name="exportbookauthorsxml" class="dropdown-item btn-secondary xmlbutton"  value="ONLY BOOK AUTHOR">
+                        <input type="submit" name="exportallxlsx" class="dropdown-item btn-secondary exportbutton"  value="ENTIRE DATA">
+                        <input type="submit" name="exportbooknamesxlsx" class="dropdown-item btn-secondary exportbutton"  value="ONLY BOOK NAMES">
+                        <input type="submit" name="exportbookauthorsxlsx" class="dropdown-item btn-secondary exportbutton"  value="ONLY BOOK AUTHOR">
                     </div>
                 </div>
-            </div>     
+
+                <div class="dropdown  col-sm-2">
+                    <button class="btn btn-secondary dropdown-toggle form-control" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        XML EXPORT
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                        <input type="submit" name="exportallxml" class="dropdown-item btn-secondary exportbutton"  value="ENTIRE DATA">
+                        <input type="submit" name="exportbooknamesxml" class="dropdown-item btn-secondary exportbutton"  value="ONLY BOOK NAMES">
+                        <input type="submit" name="exportbookauthorsxml" class="dropdown-item btn-secondary exportbutton"  value="ONLY BOOK AUTHOR">
+                    </div>
+                </div>
+            </div> 
+              
         </form>
-            
+         
     </body>
 </html>
