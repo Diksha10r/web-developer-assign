@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<book_author>
+  <title>Book Authors</title>
+  <totalRows>11</totalRows>
+  <rows>
+    <bookauthors>
+      <id>6</id>
+      <bookauthor>William Shakespeare</bookauthor>
+    </bookauthors>
+    <bookauthors>
+      <id>9</id>
+      <bookauthor>Jonathan Swift</bookauthor>
+    </bookauthors>
+    <bookauthors>
+      <id>10</id>
+      <bookauthor>Wilkie Collins</bookauthor>
+    </bookauthors>
+    <bookauthors>
+      <id>11</id>
+      <bookauthor>Bram Stoker</bookauthor>
+    </bookauthors>
+    <bookauthors>
+      <id>15</id>
+      <bookauthor>EM Forster</bookauthor>
+    </bookauthors>
+    <bookauthors>
+      <id>16</id>
+      <bookauthor>Robert Penn Warren</bookauthor>
+    </bookauthors>
+    <bookauthors>
+      <id>17</id>
+      <bookauthor>Penelope Fitzgerald</bookauthor>
+    </bookauthors>
+    <bookauthors>
+      <id>18</id>
+      <bookauthor>Don DeLillo</bookauthor>
+    </bookauthors>
+    <bookauthors>
+      <id>19</id>
+      <bookauthor>R K Narayan</bookauthor>
+    </bookauthors>
+    <bookauthors>
+      <id>21</id>
+      <bookauthor>Mulk Raj Anand</bookauthor>
+    </bookauthors>
+    <bookauthors>
+      <id>22</id>
+      <bookauthor>Harper Lee</bookauthor>
+    </bookauthors>
+  </rows>
+</book_author>

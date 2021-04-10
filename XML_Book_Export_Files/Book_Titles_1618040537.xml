@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<book_title>
+  <title>Book Titles</title>
+  <totalRows>11</totalRows>
+  <rows>
+    <booknames>
+      <id>6</id>
+      <bookname>Hamlet</bookname>
+    </booknames>
+    <booknames>
+      <id>9</id>
+      <bookname>Gulliver's Travels</bookname>
+    </booknames>
+    <booknames>
+      <id>10</id>
+      <bookname>The Moonstone</bookname>
+    </booknames>
+    <booknames>
+      <id>11</id>
+      <bookname>Dracula</bookname>
+    </booknames>
+    <booknames>
+      <id>15</id>
+      <bookname>A Passage to India</bookname>
+    </booknames>
+    <booknames>
+      <id>16</id>
+      <bookname>All the King's Men</bookname>
+    </booknames>
+    <booknames>
+      <id>17</id>
+      <bookname>The Beginning of Spring</bookname>
+    </booknames>
+    <booknames>
+      <id>18</id>
+      <bookname>Underworld</bookname>
+    </booknames>
+    <booknames>
+      <id>19</id>
+      <bookname>Malgudi Days</bookname>
+    </booknames>
+    <booknames>
+      <id>21</id>
+      <bookname>Untouchable</bookname>
+    </booknames>
+    <booknames>
+      <id>22</id>
+      <bookname>To Kill a Mockingbird</bookname>
+    </booknames>
+  </rows>
+</book_title>
