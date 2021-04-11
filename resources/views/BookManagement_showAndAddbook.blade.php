@@ -86,6 +86,13 @@
                         </tr>
                         @endforeach
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Author</th>
+                            <th>Actions</th>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
             
@@ -131,6 +138,5 @@
             </div> 
               
         </form>
-         
     </body>
 </html>
