@@ -10,7 +10,7 @@ use App\Exports\BooknameExport;
 use App\Exports\BookauthorExport;
 
 use Maatwebsite\Excel\Facades\Excel;
-
+use DB;
 use PDO; 
 use DOMDocument;
 
@@ -25,6 +25,8 @@ class BookManagementController extends Controller
     {   
         
         return view('BookManagement_showAndAddbook')-> with('bookArray', BookManagement::all());
+        // $books = DB::select('select * from book_management');
+        // return view('BookManagement_showAndAddbook',['bookArray'=>$books]);
     }
 
     public function create()
@@ -84,6 +86,8 @@ class BookManagementController extends Controller
     {
         BookManagement::destroy(array('id',$id));
         return redirect('/');
+       // DB::delete('delete from book_management where id = ?',[$id]);
+       // return redirect('/');
     }
 
 
