@@ -23,14 +23,14 @@
 4) Also, you can sort the title and author alphabetically by clicking on the table headers of this table.
 5) Through search bar you can search book records either by entering a book title or author name.
 6) With 'csv export' and 'excel export' button you can extract the data in 3 ways. 
-    a) details of all the books
-    b) only book title 
-    c) only book author
+    1) details of all the books
+    2) only book title 
+    3) only book author. 
 You can choose where to save the downloaded file. Also it takes less than 30secs to start downloading process.
 7) With 'xml export' button also, you can extract the data in 3 ways.
-    a) details of all the books
-    b) only book title 
-    c) only book author
+    1) details of all the books
+    2) only book title 
+    3) only book author. 
 These files are stored in "XML_Book_Export_Files" folder created by me in the root location of the main folder.
 You can change the filepath you want in the function, written inside the controller.
 
