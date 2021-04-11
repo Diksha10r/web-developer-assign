@@ -10,7 +10,17 @@ use DatabaseMigrations, DatabaseTransactions;
 
 class BookTest extends TestCase
 {   
-    use RefreshDatabase;    
+    use RefreshDatabase; 
+    
+    /** @test */
+    public function home_page_loads_correctly()
+    {
+        $response = $this->get('/');
+        $response->assertStatus(200);
+        $response->assertSee('Book Title');
+        $response->assertSee('Author');
+    }
+
     
     /** @test */
     public function user_can_see_all_book_details()
@@ -47,6 +57,7 @@ class BookTest extends TestCase
         $this->post('/BookManagement_submit',$book->toArray())
         ->assertSessionHasErrors('bookauthor');
     }
+
 
     /** @test */
     public function user_can_update_book_details()
