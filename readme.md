@@ -26,13 +26,15 @@
     1) details of all the books
     2) only book title 
     3) only book author. 
-You can choose where to save the downloaded file. Also it takes less than 30secs to start downloading process.
+ 
+(You can choose where to save the downloaded file. Also it takes less than 30secs to start downloading process.)
 7) With 'xml export' button also, you can extract the data in 3 ways.
     1) details of all the books
     2) only book title 
     3) only book author. 
-These files are stored in "XML_Book_Export_Files" folder created by me in the root location of the main folder.
-You can change the filepath you want in the function, written inside the controller.
+
+(These files are stored in "XML_Book_Export_Files" folder created by me in the root location of the main folder.
+You can change the filepath you want in the function, written inside the controller.)
 
 > *For CRUD operations and validations, test cases are also written that gives good test coverage.
 
