@@ -1,3 +1,5 @@
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <B>BOOK MANAGEMENT</B>
@@ -5,7 +7,9 @@
 - This project allows a user to add, update, delete and fetch book details.
 - It also allows user to search a book by its title and author name.
 - Also, a user can sort the title and author name in ascending and descending order alphabetically.(by clicking on the headers of the table i.e., Book Title and Author)
-- User can export the data either as .csv, xlsx and .xml file formats.</p>
+- User can export the data either as .csv, .xlsx and .xml file formats.
+
+> *Screenshots are also attached below
 
 
 <B> HOW TO ACCESS</B>
@@ -41,8 +45,27 @@ Name of the table : book_management</p>
 (These files are stored in "XML_Book_Export_Files" folder created by me in the root location of the main folder.
 You can change the filepath you want in the function, written inside the controller.)
 
+</br>
+
 > *For CRUD operations and validations, test cases are also written that gives good test coverage.
 
+</br></br>
+
+<B>SCREENSHOTS</B>
+
+<table>
+    <tr>
+        <td style="width:200"><img src="https://user-images.githubusercontent.com/65304980/114322013-9e87ae80-9b3b-11eb-8d9a-ac97a8b4d49d.png" ></td>
+        <td style="width:200"><img src="https://user-images.githubusercontent.com/65304980/114322019-a5162600-9b3b-11eb-8840-ef4c4444dfeb.png" ></td>
+        <td style="width:200"><img src="https://user-images.githubusercontent.com/65304980/114322033-b65f3280-9b3b-11eb-9fb8-9b536d854847.png" ></td>
+        <td style="width:200"><img src="https://user-images.githubusercontent.com/65304980/114322041-c24af480-9b3b-11eb-823e-e52c4de3d755.png" ></td>
+        <td style="width:200"><img src="https://user-images.githubusercontent.com/65304980/114322048-caa32f80-9b3b-11eb-8665-00e86a2b7999.png" ></td>
+        <td style="width:200"><img src="https://user-images.githubusercontent.com/65304980/114322068-e60e3a80-9b3b-11eb-8000-5ab0ee864295.png" ></td>
+        <td style="width:200"><img src="https://user-images.githubusercontent.com/65304980/114322075-edcddf00-9b3b-11eb-82fc-e80d0ea96d39.png" ></td>
+        <td style="width:200"><img src="https://user-images.githubusercontent.com/65304980/114322280-e0fdbb00-9b3c-11eb-8fd3-e10654853e87.png" ></td>
+        <td style="width:200"><img src="https://user-images.githubusercontent.com/65304980/114322287-ea872300-9b3c-11eb-8dad-9fac1b79a872.png" ></td>
+    </tr>
+ </table>
 
 </br></br>
 <p align="center">
