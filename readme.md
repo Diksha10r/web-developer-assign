@@ -4,28 +4,35 @@
 
 - This project allows a user to add, update, delete and fetch book details.
 - It also allows user to search a book by its title and author name.
-- Also, a user can sort the title and author name in ascending and descending order alphabetically.
-- User can export the data either as csv or xlsx format.</p>
+- Also, a user can sort the title and author name in ascending and descending order alphabetically.(by clicking on the headers of the table i.e., Book Title and Author)
+- User can export the data either as .csv, xlsx and .xml file formats.</p>
 
 
 <B> HOW TO ACCESS</B>
 
 > * First you need to have laravel setup with composer and php. (here the latest version is used for all of them)
 > * After installation and running the wampserver, you can now clone the repo.
-> * Next type 127.0.0.1:8000 in the url section to access the project.</p>
+> * Next type 127.0.0.1:8000 in the url bar to access the project.
+> * For accessing the database, hit 127.0.0.1/phpmyadmin/ in url bar.</p>
 
 <B>HOW TO CARRY OUT CRUD OPERATIONS FOR THIS PROJECT</B>
 
-1) After hitting the url - 127.0.0.1:8000, you will find a form, a search bar, a table filled with records and buttons to export this data in a desired format.
-2) Through this form you can add new book record into the database. Now the newly created data will be shown in the table which is below the form.
-3) Table in this page can be used to edit and delete records by clicking on the action buttons.
-4) Also, you can sort the title and author by clicking on the table headers of this table.
+1) After hitting the url - 127.0.0.1:8000, you will find a form, a search bar, a table filled with records and buttons to export the data in a desired format.
+2) Through this form you can add new book record into the database. Now the newly added data will be shown in the table which is created just below the form.
+3) Table in this page can be used to edit and delete records by clicking on the "action" buttons.
+4) Also, you can sort the title and author alphabetically by clicking on the table headers of this table.
 5) Through search bar you can search book records either by entering a book title or author name.
 6) With 'csv export' and 'excel export' button you can extract the data in 3 ways. 
     a) details of all the books
     b) only book title 
     c) only book author
-
+You can choose where to save the downloaded file. Also it takes less than 30secs to start downloading process.
+7) With 'xml export' button also, you can extract the data in 3 ways.
+    a) details of all the books
+    b) only book title 
+    c) only book author
+These files are stored in "XML_Book_Export_Files" folder created by me in the root location of the main folder.
+You can change the filepath you want in the function, written inside the controller.
 
 > *For CRUD operations and validations, test cases are also written that gives good test coverage.
 
