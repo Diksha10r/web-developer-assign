@@ -13,7 +13,7 @@
 > * First you need to have laravel setup with composer and php. (here the latest version is used for all of them)
 > * After installation and running the wampserver, you can now clone the repo.
 > * Next type 127.0.0.1:8000 in the url bar to access the project.
-> * For accessing the database, hit 127.0.0.1/phpmyadmin/ in url bar.</p>
+> * For accessing the database, type 127.0.0.1/phpmyadmin/ in url bar.</p>
 
 <B>HOW TO CARRY OUT CRUD OPERATIONS FOR THIS PROJECT</B>
 
