@@ -117,20 +117,9 @@ input[type="search"]{
 .exportbutton{
     
     background-color: #fff;
-    border-color: #1c7430;
     user-select: none;
     border: 1px solid transparent;
     
-    
-    
-}
-
-.xlsxbutton{
-    
-    background-color: #fff;
-    border-color: #949493;
-    user-select: none;
-    border: 1px solid transparent;
     
     
 }
